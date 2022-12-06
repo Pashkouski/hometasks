@@ -33,7 +33,7 @@ export type MessageType = {
 export const message0: MessageType = {
     id: 0,
     user: {
-        avatar: avatar, // можно менять
+        avatar: "https://bipbap.ru/wp-content/uploads/2021/07/1551512888_2-730x617.jpg", // можно менять
         name: 'Some Name',  // можно менять
     },
     message: {

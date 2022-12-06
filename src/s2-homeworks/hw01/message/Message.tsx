@@ -1,13 +1,15 @@
 import React from 'react'
 import s from './Message.module.css'
+import {message0, MessagesType, UserType} from "../HW1";
 
 // нужно создать правильный тип вместо any
 export type MessagePropsType = {
     message: {
         id: number
+        user: UserType
+        message: MessagesType
     }
 }
-
 // нужно отобразить приходящие данные
 const Message = (props: MessagePropsType) => {
     return (
@@ -16,25 +18,25 @@ const Message = (props: MessagePropsType) => {
                 <img
                     id={'hw1-avatar-' + props.message.id}
                     // создаёт студент
-                    src="https://bipbap.ru/wp-content/uploads/2021/07/1551512888_2-730x617.jpg" alt=""
+                    src={message0.user.avatar}
                     //
                 />
                 <div className={s.text}>
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
                         {/*создаёт студент*/}
-                        ewqweq
+                        {message0.user.name}
                         {/**/}
                     </div>
                     <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
                         {/*создаёт студент*/}
-                        sadsdsa
+                        {message0.message.text}
                         {/**/}
                     </pre>
                 </div>
             </div>
             <div id={'hw1-time-' + props.message.id} className={s.time}>
                 {/*создаёт студент*/}
-                21
+                {message0.message.time}
                 {/**/}
             </div>
         </div>
