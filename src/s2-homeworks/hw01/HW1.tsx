@@ -53,7 +53,9 @@ export const friendMessage0: MessageType = {
     },
 }
 
+export const AddPost = () => {
 
+}
 
 
 

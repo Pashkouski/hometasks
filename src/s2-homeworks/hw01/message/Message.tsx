@@ -10,6 +10,10 @@ export type MessagePropsType = {
         message: MessagesType
     }
 }
+
+
+
+
 // нужно отобразить приходящие данные
 const Message = (props: MessagePropsType) => {
     return (
