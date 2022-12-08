@@ -37,12 +37,14 @@
 }
 
 .name {
+    display: flex;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     color: #F5F7FB;
+    justify-content: flex-end;
 }
 
 .messageText {
