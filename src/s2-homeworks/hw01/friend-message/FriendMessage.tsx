@@ -1,7 +1,6 @@
 import React from 'react'
 import s from './FriendMessage.module.css'
 import {MessagePropsType} from "../message/Message";
-import {friendMessage0} from "../HW1";
 
 
 // создать тип вместо any и отобразить приходящие данные
@@ -27,7 +26,6 @@ const FriendMessage = (props: MessagePropsType) => {
                     >
                         {/*создаёт студент*/}
                         {props.message.user.name}
-
                         {/**/}
                     </div>
                     <pre
