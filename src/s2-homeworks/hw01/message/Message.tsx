@@ -1,14 +1,11 @@
 import React from 'react'
 import s from './Message.module.css'
-import {message0, MessagesType, UserType} from "../HW1";
+import {message0, MessageType} from "../HW1";
 
 // нужно создать правильный тип вместо any
 export type MessagePropsType = {
-    message: {
-        id: number
-        user: UserType
-        message: MessagesType
-    }
+    message: MessageType
+
 }
 
 

@@ -31,18 +31,18 @@ export type MessageType = {
 
 // структуру объекта не менять
 export const message0: MessageType = {
-    id: 0,
+    id: 1,
     user: {
         avatar: "https://bipbap.ru/wp-content/uploads/2021/07/1551512888_2-730x617.jpg", // можно менять
         name: 'Some Name',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
+        text: 'Yo', // можно менять
         time: '22:00', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
-    id: 100,
+    id: 0,
     user: {
         avatar: avatar, // можно менять
         name: 'Friend Name', // можно менять
